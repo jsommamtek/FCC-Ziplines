@@ -1,0 +1,52 @@
+body { padding-top: 50px; }
+
+.navbar-brand {
+	font-size: 2em;
+}
+
+.mt-top-container {
+	background-image: url("../images/background-home.jpg");
+	width: 100%;
+	background-size: cover;
+}
+
+.mt-top-row {
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+}
+
+.mt-top-row h1 {
+	font-size: 250%;
+}
+
+.mt-margin-top {
+	margin-top: 100px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.title {
+	margin-top: 100px;
+	font-size: 300%;
+}
+
+.footer {
+	background-color: #B0D1FB;
+	padding-top: 70px;
+	width: 100%;
+}
+
+.marginBottom {
+	margin-bottom: 30px;
+}
+
+.appStoreImage {
+	width: 250px; 
+}
