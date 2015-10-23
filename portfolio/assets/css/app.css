@@ -1,4 +1,13 @@
 /* body { padding-top: 50px; } */
+html, body {
+	height: 100%;
+}
+
+/*.navbar {
+    background-color: transparent;
+    background: transparent;
+    background-image: none;
+}*/
 
 .navbar-brand {
 	font-size: 2em;
@@ -16,19 +25,24 @@
 }
 
 .mt-top-container-projects {
-	
 	background-image: 
 		linear-gradient(
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
           ),
 		url("../images/background-projects.jpg");
 	width: 100%;
 	background-size: cover;
 }
 
+.mt-top-row-home-white {
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+}
+
 .mt-top-row-white {
-	margin-top: 50px;
+	margin-top: 100px;
 	text-align: center;
 	color: white;
 }
@@ -38,7 +52,7 @@
 }
 
 .mt-top-row{
-	margin-top: 50px;
+	margin-top: 100px;
 	text-align: center;
 }
 
