@@ -1,9 +1,7 @@
-/* body { padding-top: 50px; } */
-html, body {
-	height: 100%;
-}
 
-/* BOOTSTRAP MODIFICATIONS */
+/**********************/
+/* BOOTSTRAP CUSTOM */
+/**********************/
 
 /*.navbar {
     background-color: transparent;
@@ -19,26 +17,33 @@ html, body {
 	font-size: 2em;
 }
 
-.mt-top-container-home {
-	background-image: 
-		linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
-          ),
-		url("../images/background-home.jpg");
-	width: 100%;
-	background-size: cover;
+.row {
+	/* border:3px solid blue; */
 }
 
-.mt-top-container-projects {
-	background-image: 
-		linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
-          ),
-		url("../images/background-projects.jpg");
-	width: 100%;
-	background-size: cover;
+.container {
+	/* border:3px solid blue; */
+}
+
+/**********************/
+/* APPLICATION CUSTOM */
+/**********************/
+
+/* COMMON STYLING */
+
+html, body {
+	height: 100%;
+}
+
+.mt-block-line {
+	background: rgba(135, 135, 135, 0.5);
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+
+.top-nav-row {
+  	
 }
 
 .mt-top-row-home-white {
@@ -97,8 +102,36 @@ html, body {
 	margin-bottom: 30px;
 }
 
-.appStoreImage {
+.mt-ap-store-image {
 	width: 250px; 
+}
+
+/* HOME CONTAINER */
+
+.mt-top-container-home {
+	background-image: 
+		linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+          ),
+		url("../images/background-home.jpg");
+	width: 100%;
+	background-size: cover;
+}
+
+/* SERVICES CONTAINER */
+
+/* PORTFOLIO CONTAINER */
+
+.mt-top-container-projects {
+	background-image: 
+		linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+          ),
+		url("../images/background-projects.jpg");
+	width: 100%;
+	background-size: cover;
 }
 
 .mt-thumbnail-row {
@@ -117,12 +150,9 @@ html, body {
 	color: white;
 }
 
-.mt-block-line {
-	background: rgba(135, 135, 135, 0.5);
-	width: 100px;
-	height: 1px;
-	margin: 30px auto;
-}
+/* CONNECT CONTAINER */
+
+/* TOP NAV SCROLL DOWN/UP */
 
 .mt-scroll-down-link {
 	width: 50px;
@@ -172,14 +202,3 @@ html, body {
 	color: red;
 }
 
-.top-nav-row {
-  	
-}
-
-.row {
-	/* border:3px solid blue; */
-}
-
-.container {
-	/* border:3px solid blue; */
-}
