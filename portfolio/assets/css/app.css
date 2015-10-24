@@ -3,11 +3,17 @@ html, body {
 	height: 100%;
 }
 
+/* BOOTSTRAP MODIFICATIONS */
+
 /*.navbar {
     background-color: transparent;
     background: transparent;
     background-image: none;
 }*/
+
+.navbar-nav {
+	font-size: 125%;
+}
 
 .navbar-brand {
 	font-size: 2em;
@@ -36,7 +42,7 @@ html, body {
 }
 
 .mt-top-row-home-white {
-	margin-top: 100px;
+	margin-top: 250px;
 	text-align: center;
 	color: white;
 }
@@ -51,7 +57,7 @@ html, body {
 	font-size: 250%;
 }
 
-.mt-top-row{
+.mt-top-row {
 	margin-top: 100px;
 	text-align: center;
 }
@@ -95,6 +101,10 @@ html, body {
 	width: 250px; 
 }
 
+.mt-thumbnail-row {
+	margin-top: 50px;
+}
+
 .mt-thumbnail-background {
 	background-color: transparent;
 }
@@ -103,7 +113,7 @@ html, body {
 	text-align: center;
 }
 
-.mt-thumbnail-text h3, p {
+.mt-thumbnail-text h4 {
 	color: white;
 }
 
@@ -130,6 +140,11 @@ html, body {
 	color: white;
 }
 
+.mt-scroll-down-link a:hover,
+.mt-scroll-down-link a:active {
+	color: red;
+}
+
 .mt-scroll-up-link {
 	width: 50px;
 	height: 50px;
@@ -140,9 +155,31 @@ html, body {
 	padding-top: 12px;
 	margin: auto;
 	text-align: center;
+	position: fixed;
+	display: none;
+	z-index: 999;
+	bottom: 2em;
+	right: 2em;
 }
 
 .mt-scroll-up-link a {
 	font-size: 150%;
 	color: darkgray;
+}
+
+.mt-scroll-up-link a:hover,
+.mt-scroll-up-link a:active {
+	color: red;
+}
+
+.top-nav-row {
+  	
+}
+
+.row {
+	/* border:3px solid blue; */
+}
+
+.container {
+	/* border:3px solid blue; */
 }
