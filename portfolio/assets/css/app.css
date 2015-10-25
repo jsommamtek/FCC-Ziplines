@@ -18,6 +18,10 @@
 }
 
 .row {
+	/* border :3px solid blue; */
+}
+
+.col-md-3 {
 	/* border:3px solid blue; */
 }
 
@@ -106,7 +110,7 @@ html, body {
 	width: 250px; 
 }
 
-/* HOME CONTAINER */
+/*** HOME CONTAINER ***/
 
 .mt-top-container-home {
 	background-image: 
@@ -119,9 +123,9 @@ html, body {
 	background-size: cover;
 }
 
-/* SERVICES CONTAINER */
+/*** SERVICES CONTAINER ***/
 
-/* PORTFOLIO CONTAINER */
+/*** PORTFOLIO CONTAINER ***/
 
 .mt-top-container-projects {
 	background-image: 
@@ -150,9 +154,33 @@ html, body {
 	color: white;
 }
 
-/* CONNECT CONTAINER */
 
-/* TOP NAV SCROLL DOWN/UP */
+/*** CONNECT CONTAINER ***/
+
+.mt-social-links-row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.mt-social-links-row a:hover,
+.mt-social-links-row a:active {
+	color: #13456c;
+}
+
+.mt-connect-form-row {
+	padding-top: 20px;
+}
+
+.btn {
+	color: #777777;
+}
+
+.form-control {
+	font-size: 125%;
+}
+
+
+/*** TOP NAV SCROLL DOWN/UP ***/
 
 .mt-scroll-down-link {
 	width: 50px;
@@ -172,7 +200,7 @@ html, body {
 
 .mt-scroll-down-link a:hover,
 .mt-scroll-down-link a:active {
-	color: red;
+	color: #98BDCD;
 }
 
 .mt-scroll-up-link {
@@ -199,6 +227,6 @@ html, body {
 
 .mt-scroll-up-link a:hover,
 .mt-scroll-up-link a:active {
-	color: red;
+	color: #BF6A66;
 }
 
