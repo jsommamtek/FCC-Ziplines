@@ -1,7 +1,8 @@
 
-/**********************/
-/* BOOTSTRAP CUSTOM */
-/**********************/
+/************************/
+/*** BOOTSTRAP CUSTOM ***/
+/************************/
+
 
 /*.navbar {
     background-color: transparent;
@@ -29,11 +30,11 @@
 	/* border:3px solid blue; */
 }
 
-/**********************/
-/* APPLICATION CUSTOM */
-/**********************/
 
-/* COMMON STYLING */
+/**************************/
+/*** APPLICATION COMMON ***/
+/**************************/
+
 
 html, body {
 	height: 100%;
@@ -110,7 +111,11 @@ html, body {
 	width: 250px; 
 }
 
+
+/**********************/
 /*** HOME CONTAINER ***/
+/**********************/
+
 
 .mt-top-container-home {
 	background-image: 
@@ -123,9 +128,20 @@ html, body {
 	background-size: cover;
 }
 
-/*** SERVICES CONTAINER ***/
+.mt-sub-head-white p {
+	color: white;
+}
 
+
+/**************************/
+/*** SERVICES CONTAINER ***/
+/**************************/
+
+
+/***************************/
 /*** PORTFOLIO CONTAINER ***/
+/***************************/
+
 
 .mt-top-container-projects {
 	background-image: 
@@ -155,7 +171,10 @@ html, body {
 }
 
 
+/*************************/
 /*** CONNECT CONTAINER ***/
+/*************************/
+
 
 .mt-social-links-row {
 	padding-top: 20px;
@@ -180,7 +199,10 @@ html, body {
 }
 
 
+/******************************/
 /*** TOP NAV SCROLL DOWN/UP ***/
+/******************************/
+
 
 .mt-scroll-down-link {
 	width: 50px;
@@ -189,7 +211,7 @@ html, body {
 	border-style: solid;
 	border-color: white; 
 	border-radius: 50%;
-	padding-top: 12px;
+	padding-top: 9px;
 	margin: auto;
 }
 
@@ -210,7 +232,7 @@ html, body {
 	border-style: solid;
 	border-color: darkgray; 
 	border-radius: 50%;
-	padding-top: 12px;
+	padding-top: 9px;
 	margin: auto;
 	text-align: center;
 	position: fixed;
