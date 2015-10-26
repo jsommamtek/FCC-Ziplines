@@ -41,7 +41,7 @@ html, body {
 }
 
 .mt-block-line {
-	background: rgba(135, 135, 135, 0.5);
+	background: rgba(119, 119, 119, 0.5);
 	width: 100px;
 	height: 1px;
 	margin: 30px auto;
@@ -137,6 +137,10 @@ html, body {
 /*** SERVICES CONTAINER ***/
 /**************************/
 
+.mt-service-thumb-row {
+	margin-top: 50px;
+	text-align: center;
+}
 
 /***************************/
 /*** PORTFOLIO CONTAINER ***/
