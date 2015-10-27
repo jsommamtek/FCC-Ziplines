@@ -137,9 +137,18 @@ html, body {
 /*** SERVICES CONTAINER ***/
 /**************************/
 
+
+.mt-container-services {
+	background-color: #F5F5F5;
+}
+
 .mt-service-thumb-row {
 	margin-top: 50px;
 	text-align: center;
+}
+
+.mt-container-services fa {
+	color: black;
 }
 
 /***************************/
@@ -147,7 +156,7 @@ html, body {
 /***************************/
 
 
-.mt-top-container-projects {
+.mt-container-portfolio {
 	background-image: 
 		linear-gradient(
           rgba(0, 0, 0, 0.6),
@@ -178,6 +187,11 @@ html, body {
 /*************************/
 /*** CONNECT CONTAINER ***/
 /*************************/
+
+
+.mt-container-connect {
+	background-color: #F5F5F5;
+}
 
 
 .mt-social-links-row {
