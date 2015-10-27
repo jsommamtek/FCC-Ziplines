@@ -120,10 +120,10 @@ html, body {
 .mt-top-container-home {
 	background-image: 
 		linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.4)
           ),
-		url("../images/background-home.jpg");
+		url("../images/background-home-2.jpg");
 	width: 100%;
 	background-size: cover;
 }
@@ -144,43 +144,89 @@ html, body {
 
 .mt-service-thumb-row {
 	margin-top: 50px;
-	text-align: center;
 }
 
-.mt-container-services fa {
-	color: black;
+.mt-service-thumb-row a:hover {
+	text-decoration: none;
 }
+
+.mt-service-thumb {
+	background-color: #F5F5F5;
+	border-color: #13456C;
+}
+
+.mt-service-thumb-text {
+	text-align: center;
+	color: #777777 !important;
+}
+
+.fa-code, .fa-cloud, .fa-puzzle-piece {
+	color: #13456C !important;
+}
+
+.mt-service-thumb:hover {
+	background-color: white !important;
+}
+
+/*
+.mt-service-thumb:hover .caption,
+.mt-service-thumb:hover .fa-code {
+	color: white !important;
+}
+*/
+
 
 /***************************/
 /*** PORTFOLIO CONTAINER ***/
 /***************************/
 
-
+/*
 .mt-container-portfolio {
 	background-image: 
 		linear-gradient(
           rgba(0, 0, 0, 0.6),
           rgba(0, 0, 0, 0.6)
           ),
-		url("../images/background-projects.jpg");
+		url("../images/background-projects-2.jpg");
+	width: 100%;
+	background-size: cover;
+}
+*/
+
+.mt-container-portfolio {
+	background: 
+		linear-gradient(
+          rgba(19, 69, 108, 0.4),
+          rgba(19, 69, 108, 0.7)
+          );
 	width: 100%;
 	background-size: cover;
 }
 
-.mt-thumbnail-row {
-	margin-top: 50px;
+.mt-portfolio-thumb-row {
+	margin-top: 25px;
 }
 
-.mt-thumbnail-background {
+.mt-portfolio-thumb {
 	background-color: transparent;
 }
 
-.mt-thumbnail-text {
-	text-align: center;
+.mt-portfolio-thumb-image {
+	
 }
 
-.mt-thumbnail-text h4 {
-	color: white;
+
+.mt-portfolio-thumb-text {
+	text-align: center;
+	color: white !important;
+}
+
+.mt-portfolio-thumb:hover {
+	background-color: #777777 !important;
+}
+
+.mt-portfolio-thumb:hover .caption {
+
 }
 
 
@@ -193,15 +239,14 @@ html, body {
 	background-color: #F5F5F5;
 }
 
-
 .mt-social-links-row {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.mt-social-links-row a:hover,
-.mt-social-links-row a:active {
-	color: #13456c;
+.mt-social-links-row a:hover {
+	color: #13456C;
+	text-decoration: none;
 }
 
 .mt-connect-form-row {
