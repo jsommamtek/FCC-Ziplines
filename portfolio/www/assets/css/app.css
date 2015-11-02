@@ -47,12 +47,8 @@ html, body {
 	margin: 30px auto;
 }
 
-.top-nav-row {
-  	
-}
-
 .mt-top-row-home-white {
-	margin-top: 250px;
+	margin-top: 150px;
 	text-align: center;
 	color: white;
 }
@@ -129,6 +125,12 @@ html, body {
 }
 
 .mt-sub-head-white p {
+	color: white;
+}
+
+.mt-nav-next-white {
+	margin-top: 50px;
+	text-align: center;
 	color: white;
 }
 
