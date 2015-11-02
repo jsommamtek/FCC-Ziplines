@@ -19,3 +19,5 @@ $(window).scroll(function() {
         $('.mt-scroll-up-link').fadeOut();
     }
 });
+
+$(".mt-copyright-row").css("height", $(window).height() - 620);

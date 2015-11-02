@@ -149,6 +149,7 @@ html, body {
 .mt-service-thumb {
 	background-color: #F5F5F5;
 	border-color: #13456C;
+	height: 225px;
 }
 
 .mt-service-thumb-text {
@@ -311,3 +312,13 @@ html, body {
 	color: #BF6A66;
 }
 
+
+/******************************/
+/*** FOOTER ***/
+/******************************/
+
+
+.mt-copyright {
+	text-align: center;
+	padding-top: 125px;
+}
