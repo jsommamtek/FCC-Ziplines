@@ -244,32 +244,35 @@ html, body {
 .mt-scroll-down-link {
 	width: 50px;
 	height: 50px;
-	border-width: 1px;
+	border-width: 2px;
 	border-style: solid;
 	border-color: white; 
 	border-radius: 50%;
-	padding-top: 9px;
+	padding-top: 4px;
 	margin: auto;
 }
 
 .mt-scroll-down-link a {
-	font-size: 150%;
+	font-size: 200%;
 	color: white;
 }
 
-.mt-scroll-down-link a:hover,
-.mt-scroll-down-link a:active {
-	color: #98BDCD;
+.mt-scroll-down-link:hover {
+	border-color: #B0D1FB;
+}
+
+.mt-scroll-down-link:hover a {
+	color: #B0D1FB;
 }
 
 .mt-scroll-up-link {
 	width: 50px;
 	height: 50px;
-	border-width: 1px;
+	border-width: 2px;
 	border-style: solid;
 	border-color: darkgray; 
 	border-radius: 50%;
-	padding-top: 9px;
+	padding-top: 3px;
 	margin: auto;
 	text-align: center;
 	position: fixed;
@@ -280,12 +283,15 @@ html, body {
 }
 
 .mt-scroll-up-link a {
-	font-size: 150%;
+	font-size: 200%;
 	color: darkgray;
 }
 
-.mt-scroll-up-link a:hover,
-.mt-scroll-up-link a:active {
+.mt-scroll-up-link:hover {
+	border-color: #BF6A66;
+}
+
+.mt-scroll-up-link:hover a {
 	color: #BF6A66;
 }
 
