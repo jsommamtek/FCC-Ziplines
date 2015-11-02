@@ -218,9 +218,21 @@ html, body {
 	padding-bottom: 20px;
 }
 
-.mt-social-links-row a:hover {
+.mt-social-links-row a {
 	color: #13456C;
+}
+
+.mt-fa-social {
+	color: #13456C;
+	text-shadow: 4px 4px 5px #BBBBBB
+}
+
+.mt-social-links-row a:hover {
 	text-decoration: none;
+}
+
+.mt-social-links-row a:hover .mt-fa-social {
+	color: #777777;
 }
 
 .mt-connect-form-row {
@@ -278,7 +290,7 @@ html, body {
 	position: fixed;
 	display: none;
 	z-index: 999;
-	bottom: 2em;
+	bottom: 1em;
 	right: 2em;
 }
 
