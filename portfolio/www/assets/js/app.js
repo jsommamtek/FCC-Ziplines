@@ -21,3 +21,7 @@ $(window).scroll(function() {
 });
 
 $(".mt-copyright-row").css("height", $(window).height() - 620);
+
+$("#send-message").click(function(event) {
+    event.preventDefault();
+});
