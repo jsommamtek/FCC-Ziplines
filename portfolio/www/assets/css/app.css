@@ -4,12 +4,6 @@
 /************************/
 
 
-/*.navbar {
-    background-color: transparent;
-    background: transparent;
-    background-image: none;
-}*/
-
 .navbar-nav {
 	font-size: 125%;
 }
@@ -170,31 +164,11 @@ html, body {
 	background-color: white !important;
 }
 
-/*
-.mt-service-thumb:hover .caption,
-.mt-service-thumb:hover .fa-code {
-	color: white !important;
-}
-*/
-
 
 /***************************/
 /*** PORTFOLIO CONTAINER ***/
 /***************************/
 
-
-/*
-.mt-container-portfolio {
-	background-image: 
-		linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
-          ),
-		url("../images/background-projects-2.jpg");
-	width: 100%;
-	background-size: cover;
-}
-*/
 
 .mt-container-portfolio {
 	background: 
@@ -211,7 +185,8 @@ html, body {
 }
 
 .mt-portfolio-thumb {
-	background-color: transparent;
+	background-color: #13456C;
+	box-shadow: 5px 5px 10px #BBBBBB;
 }
 
 .mt-portfolio-thumb-text {
@@ -221,6 +196,11 @@ html, body {
 
 .mt-portfolio-thumb:hover {
 	background-color: white !important;
+}
+
+.mt-portfolio-thumb:hover h4 {
+	background-color: white !important;
+	color: black !important;
 }
 
 
