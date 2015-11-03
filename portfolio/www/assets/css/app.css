@@ -13,7 +13,7 @@
 }
 
 .row {
-	/* border :3px solid blue; */
+	/* border :3px solid blue; */ 
 }
 
 .col-md-3 {
@@ -215,11 +215,15 @@ html, body {
 }
 
 .mt-social-links-row {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
-.mt-social-links-row a {
+.mt-social-links {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.mt-social-links a {
 	color: #13456C;
 }
 
@@ -228,11 +232,11 @@ html, body {
 	text-shadow: 4px 4px 5px #BBBBBB
 }
 
-.mt-social-links-row a:hover {
+.mt-social-links a:hover {
 	text-decoration: none;
 }
 
-.mt-social-links-row a:hover .mt-fa-social {
+.mt-social-links a:hover .mt-fa-social {
 	color: #777777;
 }
 
@@ -296,7 +300,7 @@ html, body {
 	display: none;
 	z-index: 999;
 	bottom: 1em;
-	right: 2em;
+	right: 1em;
 }
 
 .mt-scroll-up-link a {
