@@ -294,26 +294,26 @@
           <div class="row mt-connect-form-row">
             
             <div class="col-md-8 col-md-offset-2">
-              <form name="connect-form" method="post">			
+              <form id="formSignUp" method="post">			
                       
                 <!-- NAME -->
-                <div class="form-group">
-                  <input name="name" value="" type="text" class="form-control" placeholder="YOUR NAME *"/>
+                <div id="fullNameGroup" class="form-group">
+                  <input id="fullName" name="fullName" value="" type="text" class="form-control" placeholder="YOUR NAME *"/>
                 </div>
                 
                 <!-- EMAIL -->
-                <div class="form-group">
-                  <input name="email" value="" type="email" class="form-control" placeholder="YOUR EMAIL *"/>
+                <div id="emailGroup" class="form-group">
+                  <input id="email" name="email" value="" type="email" class="form-control" placeholder="YOUR EMAIL *"/>
                 </div>
                 
                 <!-- MESSAGE BODY -->
-                <div class="form-group">
-                  <textarea name="message" class="form-control" rows="5" placeholder="YOUR MESSAGE *"></textarea>
+                <div id="messageBodyGroup" class="form-group">
+                  <textarea id= "messageBody" name="messageBody" class="form-control" rows="5" placeholder="YOUR MESSAGE *"></textarea>
                 </div>
                 
                 <!-- SEND MESSAGE BUTTON -->
                 <div class="form-group">
-                  <button id="send-message" name="connect" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw mt-fa-button"></i> SEND MESSAGE</buton>
+                  <button type="submit" id="send-message" class="btn btn-default btn-lg"><span class="fa fa-envelope fa-fw mt-fa-button"></span> SEND MESSAGE</buton>
                 </div>
                 
               </form>              
