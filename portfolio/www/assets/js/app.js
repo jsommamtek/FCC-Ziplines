@@ -21,35 +21,33 @@ $(document).ready(function() {
         }
     });
     
+    // Place the copyright footer near the bottom of the window
     $(".mt-copyright-row").css("height", $(window).height() - 620);
 
-    // PROCESS THE SEND MESSAGE FORM
+    // PROCESS SEND MESSAGE FORM
     $('#send-message').click(function(event) {
 
-        // clear any errors from previous submit
+        // Clear any errors from previous submit
         $('.form-group').removeClass('has-error'); // remove the error class
         $('.help-block').remove(); // remove the error text
-        $('#successMessage').remove(); // remove the success div
-        
+        $('#successMessage').remove(); // remove the successMessage div
 
-        // get the form data
+        // Get the form data into a JSON object getting ready for ajax post to server
         var formData = {
             'fullName'       : $('#fullName').val(),
             'email'          : $('#email').val(),
             'messageBody'    : $('#messageBody').val()
         };
-        
-        //console.log(formData);
 
-        // process the form using PHP
+        // Process form data validation using PHP
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'php/signUp.php', // the url where we want to POST
+            url         : 'php/processMessage.php', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode      : true
         })
-            // using the done promise callback
+            // Using the done promise callback
             .done(function(data) {
 
                 // log data to the console so we can see
@@ -57,8 +55,8 @@ $(document).ready(function() {
                 //console.log(data.success);
                 //console.log(data.errors);
 
-                // here we will handle errors and validation messages
-                if ( ! data.success) {
+                // Here we will handle errors and validation messages
+                if (! data.success) {
             
                     // handle errors for name ---------------
                     if (data.errors.fullName) {
@@ -78,26 +76,74 @@ $(document).ready(function() {
                         $('#messageBodyGroup').append('<div class="help-block">' + data.errors.messageBody + '</div>'); // add the actual error message under our input
                     }
         
+                // Validation passed so make another ajax call to update the database
                 } else {
-        
-                    // ALL GOOD! just show the success message!
-                    $('#formSignUp').append('<div id="successMessage" class="alert alert-success">' + data.message + '</div>');
-        
-                    // cleanup the form values after success
-                    $('#fullName').val('');
-                    $('#email').val('');
-                    $('#messageBody').val('');
                     
-                    // usually after form submission, you'll want to redirect
-                    // window.location = '/thank-you'; // redirect a user to another page
-                    //alert('success'); // for now we'll just alert the user
-        
-                }                
+                    //alert ("Validation passed - about to update the database");
+                    
+                    $.post('php/updateMessage.php', formData, function(data) {
+                                                
+                        // place success code here
+                        if (! data.success) {
+                                                        
+                            if (data.errors.connection) {
+
+                                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">' + data.errors.connection + '</div>');                                
+                            
+                            }
+                            
+                            if (data.errors.fields) {
+
+                                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">' + data.errors.fields + '</div>');                                
+                                
+                            }
+                            
+                        } else {
+                            
+                            // ALL GOOD! show the success message!
+                            $('#formSignUp').append('<div id="successMessage" class="alert alert-success">' + data.message + '</div>');
                 
-            });
+                            // Cleanup the form values after success
+                            $('#fullName').val('');
+                            $('#email').val('');
+                            $('#messageBody').val('');
+                            
+                            // usually after form submission, you'll want to redirect
+                            // window.location = '/thank-you'; // redirect a user to another page
+                            //alert('success'); // for now we'll just alert the user
+                                
+                        } // End (! data.success) database check    
+                        
+                    }, 'json') // End $.post php/updateMessage.php
+                        
+                        // Handle ajax fail promise from update database
+                        .fail(function(data) {
+                            
+                            // AJAX PROMISE FAIL ERROR! show a fail message!
+                            $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
+                        
+                        }); // End .fail()
+
+                } // End (! data.success) validation check  
+                
+            }) // End .done() validation check
+            
+            // Handle ajax fail promise from validate form data
+            .fail(function(data) {
+
+                // show any errors
+                // best to remove for production
+                //console.log(data);  
+                
+                // AJAX PROMISE FAIL ERROR! show a fail message!
+                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
+        
+            }); // End .fail()
+            
 
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
-    });
+        
+    }); // end process send message form
 
-});
+}); //end $(document).ready()
