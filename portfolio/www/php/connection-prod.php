@@ -1,9 +1,9 @@
 <?php
-		
+
 	$dbHost = "localhost";
-	$dbUser = "portfolio";
-	$dbPwd = "portfolio";
-	$dbName = "Portfolio";   
+	$dbUser = "joesomma_pfolio";
+	$dbPwd = "rgQMvEaYon44KcXE";
+	$dbName = "joesomma_portfolio"; 
     $dbPort = "8889";         
 	
 	//$connection = mysqli_connect ($dbHost, $dbUser, $dbPwd, $dbName);

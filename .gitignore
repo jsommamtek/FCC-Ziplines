@@ -1,5 +1,6 @@
 # Files to ignore
 *.pdf
+connection-prod.php
 
 # Folders to ignore
 bower_components
