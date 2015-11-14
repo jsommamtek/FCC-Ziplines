@@ -2,7 +2,7 @@
 
 	$dbHost = "localhost";
 	$dbUser = "joesomma_pfolio";
-	$dbPwd = "rgQMvEaYon44KcXE";
+	$dbPwd = "";
 	$dbName = "joesomma_portfolio"; 
     $dbPort = "8889";         
 	
