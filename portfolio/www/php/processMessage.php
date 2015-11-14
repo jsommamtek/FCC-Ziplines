@@ -10,8 +10,13 @@ $data   = array();      // array to pass back data
     if (empty($_POST['fullName']))
         $errors['fullName'] = 'Name is required.';
 
-    if (empty($_POST['email']))
+    // Validate email address
+    if (empty($_POST['email'])) {
         $errors['email'] = 'Email is required.';
+        	
+	} else if (! filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = 'Please enter a valid email address.';			
+	}
 
     if (empty($_POST['messageBody']))
         $errors['messageBody'] = 'Message body is required.';

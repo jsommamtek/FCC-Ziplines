@@ -25,8 +25,13 @@ $(document).ready(function() {
     $(".mt-copyright-row").css("height", $(window).height() - 620);
 
     // PROCESS SEND MESSAGE FORM
-    $('#send-message').click(function(event) {
 
+    //$('#sendMessage').click(function(event) {
+
+    $('form').submit(function(event) {
+    
+        //alert("form was submitted");
+        
         // Clear any errors from previous submit
         $('.form-group').removeClass('has-error'); // remove the error class
         $('.help-block').remove(); // remove the error text
@@ -87,21 +92,17 @@ $(document).ready(function() {
                         if (! data.success) {
                                                         
                             if (data.errors.connection) {
-
-                                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">' + data.errors.connection + '</div>');                                
-                            
+                                $('#formSendMessage').append('<div id="successMessage" class="alert alert-danger">' + data.errors.connection + '</div>');                                
                             }
                             
                             if (data.errors.fields) {
-
-                                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">' + data.errors.fields + '</div>');                                
-                                
+                                $('#formSendMessage').append('<div id="successMessage" class="alert alert-danger">' + data.errors.fields + '</div>');                                
                             }
                             
                         } else {
                             
                             // ALL GOOD! show the success message!
-                            $('#formSignUp').append('<div id="successMessage" class="alert alert-success">' + data.message + '</div>');
+                            $('#formSendMessage').append('<div id="successMessage" class="alert alert-success">' + data.message + '</div>');
                 
                             // Cleanup the form values after success
                             $('#fullName').val('');
@@ -120,7 +121,7 @@ $(document).ready(function() {
                         .fail(function(data) {
                             
                             // AJAX PROMISE FAIL ERROR! show a fail message!
-                            $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
+                            $('#formSendMessage').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
                         
                         }); // End .fail()
 
@@ -136,11 +137,10 @@ $(document).ready(function() {
                 //console.log(data);  
                 
                 // AJAX PROMISE FAIL ERROR! show a fail message!
-                $('#formSignUp').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
+                $('#formSendMessage').append('<div id="successMessage" class="alert alert-danger">AJAX fail promise callback was fired</div>');
         
             }); // End .fail()
             
-
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
         

@@ -29,10 +29,10 @@ $dbData   = array();      // array to pass back data
 	
         if (empty($dbErrors)) {   
                  
-            $query = 'INSERT INTO Contacts (FullName, Email, Message) 
-                VALUES ("'.mysqli_real_escape_string($link, $_POST["fullName"]).'",
-                        "'.mysqli_real_escape_string($link, $_POST["email"]).'",
-                        "'.mysqli_real_escape_string($link, $_POST["messageBody"]).'")';
+            $query = 'INSERT INTO Contacts (FullName, Email, Message)
+                        VALUES ("'.mysqli_real_escape_string($link, $_POST["fullName"]).'",
+                                "'.mysqli_real_escape_string($link, $_POST["email"]).'",
+                                "'.mysqli_real_escape_string($link, $_POST["messageBody"]).'")';
                                     
             //$dbData['query'] = $query;
             

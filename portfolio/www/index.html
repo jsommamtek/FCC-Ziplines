@@ -289,31 +289,33 @@
         
         <div class="col-md-6 center">
           
-          <p class="lead">Please let me know how I can help you with your project </p>          
+          <p class="lead">Please let me know how I can help you with your project </p>
           
           <div class="row mt-connect-form-row">
             
             <div class="col-md-8 col-md-offset-2">
-              <form id="formSignUp" method="post">			
+              
+              <!-- SEND MESSAGE FORM -->
+              <form id="formSendMessage" method="post">
                       
                 <!-- NAME -->
                 <div id="fullNameGroup" class="form-group">
-                  <input id="fullName" name="fullName" value="" type="text" class="form-control" placeholder="YOUR NAME *"/>
+                  <input id="fullName" name="fullName" value="" type="text" class="form-control" placeholder="YOUR NAME *" required/>
                 </div>
                 
                 <!-- EMAIL -->
                 <div id="emailGroup" class="form-group">
-                  <input id="email" name="email" value="" type="email" class="form-control" placeholder="YOUR EMAIL *"/>
+                  <input id="email" name="email" value="" type="email" class="form-control" placeholder="YOUR EMAIL *" required/>
                 </div>
                 
                 <!-- MESSAGE BODY -->
                 <div id="messageBodyGroup" class="form-group">
-                  <textarea id= "messageBody" name="messageBody" class="form-control" rows="5" placeholder="YOUR MESSAGE *"></textarea>
+                  <textarea id= "messageBody" name="messageBody" class="form-control" rows="5" placeholder="YOUR MESSAGE *" required></textarea>
                 </div>
                 
                 <!-- SEND MESSAGE BUTTON -->
                 <div class="form-group">
-                  <button type="submit" id="send-message" class="btn btn-default btn-lg"><span class="fa fa-envelope fa-fw mt-fa-button"></span> SEND MESSAGE</buton>
+                  <button type="submit" id="sendMessage" class="btn btn-default btn-lg"><span class="fa fa-envelope fa-fw mt-fa-button"></span> SEND MESSAGE</buton>
                 </div>
                 
               </form>              
@@ -340,7 +342,6 @@
           <span class="fa fa-angle-double-up"></span>
         </a>        
       </div>
-
      
     <!-- SCRIPTS SECTION AND LIBRARY REF -->
 
