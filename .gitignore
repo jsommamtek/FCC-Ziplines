@@ -3,7 +3,7 @@
 connection-prod.php
 
 # Folders to ignore
-bower_components
-node_modules
-bootstrap
-misc-media
+/bower_components
+/node_modules
+/bootstrap
+/workspace
