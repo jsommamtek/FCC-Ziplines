@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>Random Quote Machine - Free Code Camp Zipline</title>
+
+   <!-- BOOTSTRAP CSS REF -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+   <!-- BOOTSTRAP OPTIONAL THEME -->
+   <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+
+   <!-- FONT-AWESOME CSS REF -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+   <!-- APP CSS REF -->
+   <link href="css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- MAIN BODY -->
+
+<body>
+   <!-- TOP CONTAINER -->
+   <div class="container">
+
+      <!-- HEADER -->
+      <div class="row mt-row">
+         <image src="/img/ring.png" alt="Quote" width="150" height="150"></image>
+      </div>
+
+      <div class="row mt-row">
+         <h1>LORD OF THE RINGS QUOTE MACHINE - WELCOME!</h1>
+         <p class="lead">Click below to get a quote from your favorite character</p>
+      </div>
+      <!-- end row -->
+
+      <!-- QUOTE MACHINE BUTTON ROW -->
+      <div class="row mt-row">
+         <form id="quoteForm">
+            <!-- BUTTON GET QUOTE -->
+            <div>
+               <button type="submit" id="quote" class="btn btn-default">QUOTE</button>
+            </div>
+         </form>
+      </div>
+      <!-- end row -->
+
+      <!-- QUOTE MACHINE CONTENT ROW -->
+      <div id="quoteSection" class="row mt-quote-content-row">
+
+         <!-- QUOTE IMAGE COL -->
+         <div class="col-md-6 mt-img-col">
+            <img src="" id="quoteImg" class="img-responsive img-rounded" alt="Charactor Image Goes Here!">
+         </div>
+
+         <!-- QUOTE TEXT COL -->
+         <div class="col-md-6">
+            <blockquote>
+               <label id="quoteText"></label>
+               <label id="quoteSource"></label>
+            </blockquote>
+         </div>
+      </div>
+      <!-- end row -->
+   </div>
+   <!-- end .container -->
+
+   <!-- SCRIPTS SECTION AND LIBRARY REF -->
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <!-- Custom app specific javascript library -->
+   <script src="js/app.js"></script>
+
+</body>
+
+</html>

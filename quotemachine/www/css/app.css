@@ -1,0 +1,94 @@
+/**************************/
+/*** FONTS ***/
+/**************************/
+
+@font-face {
+    font-family: "My Ring Bearer";
+    src: url(/fonts/ringbearer.ttf);
+}
+
+@font-face {
+    font-family: "My Aniron";
+    src: url(/fonts/aniron.ttf);
+}
+
+/**************************/
+/*** APPLICATION COMMON ***/
+/**************************/
+
+html, body {
+   text-align: center;
+   background-color: #DDD9D1;
+}
+
+.mt-row {
+   padding-top: 20px;
+}
+
+.mt-quote-content-row {
+   padding-top: 40px;
+}
+
+.mt-img-col {
+   padding-bottom: 30px;
+}
+
+#quoteSection {
+   display: none;
+}
+
+#quoteImg {
+   box-shadow: 10px 10px 20px #46525D;
+}
+
+#quoteSource {
+   font-style: italic;
+   color: #53502B;
+   padding-top: 20px;
+}
+
+#quoteText {
+   font-family: "My Aniron";
+   font-size: 1.3em;
+   color: #53502B;
+}
+
+h1 {
+   font-family: "My Ring Bearer";
+   color: #7D4420;
+}
+
+.lead {
+   font-family: "My Ring Bearer";
+   padding-top: 20px;
+   color: #648399;
+}
+
+.btn {
+   color: #DDD9D1;
+   background-color: #7D4420 !important;
+   font-family: "My Ring Bearer";
+   font-size: 1.75em;
+   width: 160px;
+   height: 60px;
+}
+
+.btn:hover {
+   color: #FFF44B !important;
+}
+
+/************************/
+/*** BOOTSTRAP CUSTOM ***/
+/************************/
+
+.row {
+	/* border:3px solid blue; */
+}
+
+.col-md-3 {
+  	/* border :3px solid blue; */
+}
+
+.container {
+	/* border:3px solid blue; */
+}
