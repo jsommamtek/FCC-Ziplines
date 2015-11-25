@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: "My Ring Bearer";
-    src: url(/fonts/ringbearer.ttf);
+    src: url("../fonts/ringbearer.ttf");
 }
 
 @font-face {
     font-family: "My Aniron";
-    src: url(/fonts/aniron.ttf);
+    src: url("../fonts/aniron.ttf");
 }
 
 /**************************/
