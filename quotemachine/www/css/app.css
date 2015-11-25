@@ -33,6 +33,10 @@ html, body {
    padding-bottom: 30px;
 }
 
+.mt-hdr-img {
+   max-height: 150px;
+}
+
 #quoteSection {
    display: none;
 }
