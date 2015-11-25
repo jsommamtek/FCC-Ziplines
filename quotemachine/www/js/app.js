@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
    // Set the quote image path
-   var quoteImgPath = '../img/';
+   var quoteImgPath = 'img/';
 
    // Load your quotes here
    var quotes = [
