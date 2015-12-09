@@ -13,7 +13,7 @@
 }
 
 .row {
-	/* border :3px solid blue; */ 
+	/* border :3px solid blue; */
 }
 
 .col-md-3 {
@@ -22,6 +22,10 @@
 
 .container {
 	/* border:3px solid blue; */
+}
+
+.lead {
+   font-size: 165% !important;
 }
 
 
@@ -34,6 +38,9 @@ html, body {
 	height: 100%;
 }
 
+h1 {
+   font-size: 300%;
+}
 .mt-block-line {
 	background: rgba(119, 119, 119, 0.5);
 	width: 100px;
@@ -98,7 +105,7 @@ html, body {
 }
 
 .mt-ap-store-image {
-	width: 250px; 
+	width: 250px;
 }
 
 
@@ -108,7 +115,7 @@ html, body {
 
 
 .mt-top-container-home {
-	background-image: 
+	background-image:
 		linear-gradient(
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.8)
@@ -172,7 +179,7 @@ html, body {
 
 
 .mt-container-portfolio {
-	background: 
+	background:
 		linear-gradient(
           rgba(19, 69, 108, 0.4),
           rgba(19, 69, 108, 0.6)
@@ -267,7 +274,7 @@ html, body {
 	height: 50px;
 	border-width: 2px;
 	border-style: solid;
-	border-color: white; 
+	border-color: white;
 	border-radius: 50%;
 	padding-top: 4px;
 	margin: auto;
@@ -291,7 +298,7 @@ html, body {
 	height: 50px;
 	border-width: 2px;
 	border-style: solid;
-	border-color: darkgray; 
+	border-color: darkgray;
 	border-radius: 50%;
 	padding-top: 3px;
 	margin: auto;
