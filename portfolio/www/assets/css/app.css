@@ -3,7 +3,6 @@
 /*** BOOTSTRAP CUSTOM ***/
 /************************/
 
-
 .navbar-nav {
 	font-size: 125%;
 }
@@ -32,7 +31,6 @@
 /**************************/
 /*** APPLICATION COMMON ***/
 /**************************/
-
 
 html, body {
 	height: 100%;
@@ -113,7 +111,6 @@ h1 {
 /*** HOME CONTAINER ***/
 /**********************/
 
-
 .mt-top-container-home {
 	background-image:
 		linear-gradient(
@@ -139,7 +136,6 @@ h1 {
 /**************************/
 /*** SERVICES CONTAINER ***/
 /**************************/
-
 
 .mt-container-services {
 	background-color: #F5F5F5;
