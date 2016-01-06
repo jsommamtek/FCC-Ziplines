@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>Millentek - Client Profile</title>
+
+   <!-- BOOTSTRAP CSS REF -->
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+   <!-- BOOTSTRAP OPTIONAL THEME -->
+   <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+
+   <!-- FONT-AWESOME CSS REF -->
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+   <!-- BOOTSTRAP 3 DATEPICKER CSS REF -->
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/css/bootstrap-datepicker3.min.css"
+   />
+
+   <!-- APP CSS REF -->
+   <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+   <div id="connect" class="container-fluid mt-content-container mt-container-connect">
+
+      <div class="row mt-top-row-client-profile text-muted center">
+
+         <!-- HEADER -->
+         <div class="col-md-6 col-md-offset-3">
+            <h1>CLIENT PROJECT PROFILE</h1>
+            <div class="mt-block-line"></div>
+         </div>
+
+      </div>
+      <!-- .row -->
+
+      <div class="row">
+
+         <!-- CLIENT PROFILE FORM COLUMN -->
+         <div class="col-md-6 col-md-offset-3">
+
+            <p class="lead">Please complete the client profile below. All fields are required. We will contact you as soon as we review your
+               saved profile to schedule an initial project assessment meeting. We look forward to helping you build your
+               next web application!</p>
+
+            <div class="row mt-connect-form-row">
+
+               <!-- SEND MESSAGE FORM -->
+               <form id="formClientProfile" method="post">
+
+                  <!-- COMPANY NAME -->
+                  <div id="companyNameGroup" class="form-group">
+                     <label for="companyName" class="mt-label text-muted"><span class="mt-label-required">*</span> Company Name</label>
+                     <input id="companyName" name="companyName" value="" type="text" class="form-control" placeholder="e.g. ACME Widgets" />
+                  </div>
+
+                  <!-- COMPANY ADDRESS -->
+                  <div id="companyAddrGroup" class="form-group">
+                     <label for="companyAddr" class="mt-label text-muted"><span class="mt-label-required">*</span> Company Address</label>
+                     <input id="companyAddr" name="companyAddr" value="" type="text" class="form-control" placeholder="e.g. 123 Main St, Gilford, NH 03249" />
+                  </div>
+
+                  <!-- CONTACT NAME -->
+                  <div id="contactNameGroup" class="form-group">
+                     <label for="contactName" class="mt-label text-muted"><span class="mt-label-required">*</span> Contact Full Name</label>
+                     <input id="contactName" name="contactName" value="" type="text" class="form-control" placeholder="e.g. Jordan Spieth" />
+                  </div>
+
+                  <!-- CONTACT EMAIL -->
+                  <div id="contactEmailGroup" class="form-group">
+                     <label for="contactEmail" class="mt-label text-muted"><span class="mt-label-required">*</span> Contact Email</label>
+                     <input id="contactEmail" name="contactEmail" value="" type="text" class="form-control" placeholder="e.g. jordan@acme.com" />
+                  </div>
+
+                  <!-- CONTACT PHONE -->
+                  <div id="contactPhoneGroup" class="form-group">
+                     <label for="contactPhone" class="mt-label text-muted"><span class="mt-label-required">*</span> Contact Phone</label>
+                     <input id="contactPhone" name="contactPhone" value="" type="tel" class="form-control" placeholder="e.g. 603- 555-1212" />
+                  </div>
+
+                  <!-- COMPANY HISTORY -->
+                  <div id="coHistoryGroup" class="form-group">
+                     <label for="coHistory" class="mt-label text-muted"><span class="mt-label-required">*</span> 1. What is your company history?</label>
+                     <textarea id="coHistory" name="coHistory" class="form-control" rows="5" placeholder="" ></textarea>
+                  </div>
+
+                  <!-- WEBSITE HISTORY -->
+                  <div id="webHistoryGroup" class="form-group">
+                     <label for="webHistory" class="mt-label text-muted"><span class="mt-label-required">*</span> 2. What is your website history?</label>
+                     <textarea id="webHistory" name="webHistory" class="form-control" rows="5" placeholder="" ></textarea>
+                  </div>
+
+                  <!-- BUILD NOW -->
+                  <div id="buildNowGroup" class="form-group">
+                     <label for="buildNow" class="mt-label text-muted"><span class="mt-label-required">*</span> 3. What do you want to build now?</label>
+                     <textarea id="buildNow" name="buildNow" class="form-control" rows="5" placeholder="" ></textarea>
+                  </div>
+
+                  <!-- CONSTRAINT -->
+                  <div id="constraintOptionsGroup" class="form-group">
+
+                     <label for="constraintOptions" class="mt-label text-muted"><span class="mt-label-required">*</span> 4. Select the most important variable that you would be willing
+                        to define more than any other in order to increase the probability of success for an agile softare
+                        development project?</label>
+
+                     <div class="radio">
+                        <label class="mt-label text-muted">
+                           <input type="radio" name="constraintOptions" id="constraintOptions" value="Time" > Time - A fixed deadline
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label class="mt-label text-muted">
+                           <input type="radio" name="constraintOptions" id="constraintOptions" value="Cost" > Cost - A fixed budget
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label class="mt-label text-muted">
+                           <input type="radio" name="constraintOptions" id="constraintOptions" value="Scope" > Scope - A fixed feature set
+                        </label>
+                     </div>
+                  </div>
+
+                  <!-- PROJECT START DATE -->
+                  <div id="startDateGroup" class="form-group">
+                     <label for="startDate" class="mt-label text-muted"><span class="mt-label-required">*</span> 5. When would you like to start your project?</label>
+
+                     <div class="input-group date" data-date-autoclose="true">
+                        <input id="startDate" name="startDate" value="" type="text" class="form-control" placeholder="e.g. MM/DD/YYYY or Use the Date Picker"  />
+                        <div class="input-group-addon">
+                           <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <!-- SAVE PROFILE BUTTON -->
+                  <div class="form-group center">
+                     <button type="submit" id="saveProfile" class="btn btn-default btn-lg"><span class="fa fa-floppy-o fa-fw mt-fa-button"></span> SAVE PROFILE</buton>
+                  </div>
+
+               </form>
+            </div>
+            <!-- .row -->
+         </div>
+         <!-- end contact form column -->
+
+      </div>
+
+      <!-- SCRIPTS SECTION AND LIBRARY REF -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+      <!-- Bootstrap Datepicker Lib -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/js/bootstrap-datepicker.min.js"></script>
+
+      <!-- Custom app specific javascript library -->
+      <script src="assets/js/profile.js"></script>
+
+</body>
+
+</html>

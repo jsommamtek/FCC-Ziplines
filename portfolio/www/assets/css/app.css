@@ -329,3 +329,20 @@ h1 {
 	text-align: center;
 	padding-top: 125px;
 }
+
+
+/******************************/
+/*** CLIENT PROFILE         ***/
+/******************************/
+
+.mt-label {
+   font-size: 1.25em;
+}
+
+.mt-label-required {
+   color: blue;
+}
+
+.mt-top-row-client-profile {
+	margin-top: 50px;
+}
