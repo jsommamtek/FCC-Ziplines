@@ -22,16 +22,7 @@ $(document).ready(function() {
     });
 
     // Place the copyright footer near the bottom of the window
-    $(".mt-copyright-row").css("height", $(window).height() - 620);
-
-    // Show the bootstrap datapicker when clicked
-    $('#startDateGroup .input-group.date').datepicker({
-    });
-
-
-
-
-
+    $(".mt-copyright").css("padding-top", $(window).height() - 260);
 
     // PROCESS SEND MESSAGE FORM
 
