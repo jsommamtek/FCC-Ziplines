@@ -114,8 +114,8 @@ h1 {
 .mt-top-container-home {
 	background-image:
 		linear-gradient(
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.3)
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
           ),
 		url("../images/background-2-home.jpeg");
 	width: 100%;
@@ -128,10 +128,11 @@ h1 {
 
 .mt-sub-head-white a {
 	color: white;
+   font-weight: bold;
+   text-decoration: underline;
 }
 
 .mt-sub-head-white a:hover {
-	text-decoration: none;
 	color: #B0D1FB;
 }
 
