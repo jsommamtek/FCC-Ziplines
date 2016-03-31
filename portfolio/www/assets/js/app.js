@@ -16,8 +16,11 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.mt-scroll-up-link').fadeIn();
+            $('.mt-scroll-down-link').fadeOut();
+
         } else {
             $('.mt-scroll-up-link').fadeOut();
+            $('.mt-scroll-down-link').fadeIn();
         }
     });
 
