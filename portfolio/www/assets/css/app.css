@@ -40,16 +40,10 @@ h1 {
    font-size: 300%;
 }
 .mt-block-line {
-	background: rgba(119, 119, 119, 0.5);
-	width: 100px;
+	background: rgba(33, 33, 33, 0.3);
+	width: 300px;
 	height: 1px;
 	margin: 30px auto;
-}
-
-.mt-top-row-home-white {
-	margin-top: 150px;
-	text-align: center;
-	color: white;
 }
 
 .mt-top-row-white {
@@ -114,26 +108,39 @@ h1 {
 .mt-top-container-home {
 	background-image:
 		linear-gradient(
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.2)
           ),
 		url("../images/background-2-home.jpeg");
 	width: 100%;
 	background-size: cover;
 }
 
-.mt-sub-head-white {
-	color: white;
+.mt-top-row-home {
+	margin-top: 100px;
+   padding-top: 20px;
+	text-align: center;
+   /*background-color:rgba(206, 199, 189, 0.9);*/
+   background: linear-gradient(
+          rgba(206, 199, 189, 0.9),
+          rgba(206, 199, 189, 0.9)
+          );
 }
 
-.mt-sub-head-white a {
-	color: white;
-   font-weight: bold;
+/*.mt-sub-head {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: rgba(206, 199, 189, 0.9);
+}*/
+
+.mt-sub-head, .mt-top-row-home a {
+	color: #212121;
+
    text-decoration: underline;
 }
 
-.mt-sub-head-white a:hover {
-	color: #B0D1FB;
+.mt-sub-head, .mt-top-row-home a:hover {
+	color: #ffffff;
 }
 
 .mt-nav-next-white {
@@ -142,17 +149,25 @@ h1 {
 	color: white;
 }
 
+.mt-home-header-text {
+   padding-bottom: 20px;
+   color: #212121;
+}
+
+.mt-home-lead-text {
+   color: #212121;
+}
 
 /**************************/
 /*** SERVICES CONTAINER ***/
 /**************************/
 
 .mt-container-services {
-	background-color: #F5F5F5;
+	background-color: #b29b8b;
 }
 
 .mt-service-thumb-row {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .mt-service-thumb-row a:hover {
@@ -160,23 +175,33 @@ h1 {
 }
 
 .mt-service-thumb {
-	background-color: #F5F5F5;
-	border-color: #13456C;
-	height: 280px;
+	background-color: #d8c9be;
+	border-color: #7f6350;
+	height: 325px;
+   padding-top: 20px;
 }
 
 .mt-service-thumb-text {
 	text-align: center;
-	color: #777777 !important;
+	color: #212121 !important;
 }
 
 .fa-code, .fa-search, .fa-cloud, .fa-puzzle-piece {
-	color: #13456C !important;
+	color: #212121 !important;
 }
 
 .mt-service-thumb:hover {
-	background-color: white !important;
+	background-color: #cec7bd !important;
 }
+
+.mt-service-header-text {
+   color: #212121;
+}
+
+.mt-service-lead-text {
+   color: #212121;
+}
+
 
 
 /***************************/
@@ -187,35 +212,44 @@ h1 {
 .mt-container-portfolio {
 	background:
 		linear-gradient(
-          rgba(19, 69, 108, 0.4),
-          rgba(19, 69, 108, 0.6)
+          rgba(206, 199, 189, 1.0),
+          rgba(206, 199, 189, 1.0)
           );
 	width: 100%;
 	background-size: cover;
 }
 
 .mt-portfolio-thumb-row {
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 .mt-portfolio-thumb {
-	background-color: #13456C;
-	box-shadow: 5px 5px 10px #BBBBBB;
+	background-color: #7f6350;
+	/*box-shadow: 5px 5px 10px #b29b8b;*/
 }
 
 .mt-portfolio-thumb-text {
 	text-align: center;
-	color: white !important;
+	color: #212121 !important;
 }
 
 .mt-portfolio-thumb:hover {
-	background-color: white !important;
+	background-color: #b29b8b !important;
 }
 
 .mt-portfolio-thumb:hover h4 {
-	background-color: white !important;
-	color: #13456C !important;
+	background-color: #b29b8b !important;
+	color: #212121 !important;
 }
+
+.mt-portfolio-header-text {
+   color: #212121;
+}
+
+.mt-portfolio-lead-text {
+   color: #212121;
+}
+
 
 
 /*************************/
@@ -224,7 +258,7 @@ h1 {
 
 
 .mt-container-connect {
-	background-color: #F5F5F5;
+	background-color: #d8c9be;
 }
 
 .mt-social-links-row {
@@ -237,20 +271,20 @@ h1 {
 }
 
 .mt-social-links a {
-	color: #13456C;
+	color: #7f6350;
 }
 
 .mt-fa-social {
-	color: #13456C;
-	text-shadow: 4px 4px 5px #BBBBBB
+	color: #7f6350;
+	/* text-shadow: 4px 4px 5px #BBBBBB */
 }
 
 .mt-social-links a:hover {
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 
 .mt-social-links a:hover .mt-fa-social {
-	color: #777777;
+	color: #b29b8b;
 }
 
 .mt-connect-form-row {
@@ -258,7 +292,12 @@ h1 {
 }
 
 .btn {
-	color: #777777;
+	color: #7f6350;
+}
+
+.btn:hover {
+   color: #7f6350;
+   background-color: #b29b8b;
 }
 
 .form-control {
@@ -266,9 +305,16 @@ h1 {
 }
 
 .mt-fa-button {
-	color: #13456C;
+	color: #7f6350;
 }
 
+.mt-connect-header-text {
+   color: #212121;
+}
+
+.mt-connect-lead-text {
+   color: #212121;
+}
 
 /******************************/
 /*** TOP NAV SCROLL DOWN/UP ***/
@@ -280,23 +326,28 @@ h1 {
 	height: 50px;
 	border-width: 2px;
 	border-style: solid;
-	border-color: white;
+	border-color: #212121;
 	border-radius: 50%;
 	padding-top: 4px;
 	margin: auto;
+   text-align: center;
+	position: fixed;
+	z-index: 999;
+	bottom: 1em;
+	right: 1em;
 }
 
 .mt-scroll-down-link a {
 	font-size: 200%;
-	color: white;
+	color: #212121;
 }
 
 .mt-scroll-down-link:hover {
-	border-color: #B0D1FB;
+	border-color: #ffffff;
 }
 
 .mt-scroll-down-link:hover a {
-	color: #B0D1FB;
+	color: #ffffff;
 }
 
 .mt-scroll-up-link {
@@ -304,7 +355,7 @@ h1 {
 	height: 50px;
 	border-width: 2px;
 	border-style: solid;
-	border-color: darkgray;
+	border-color: #212121;
 	border-radius: 50%;
 	padding-top: 3px;
 	margin: auto;
@@ -318,15 +369,15 @@ h1 {
 
 .mt-scroll-up-link a {
 	font-size: 200%;
-	color: darkgray;
+	color: #212121;
 }
 
 .mt-scroll-up-link:hover {
-	border-color: #BF6A66;
+	border-color: #ffffff;
 }
 
 .mt-scroll-up-link:hover a {
-	color: #BF6A66;
+	color: #ffffff;
 }
 
 
@@ -338,6 +389,7 @@ h1 {
 .mt-copyright {
 	text-align: center;
 	padding-top: 125px;
+   color: #212121;
 }
 
 
