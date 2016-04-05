@@ -54,7 +54,7 @@ h1 {
 }
 
 .mt-top-row-white {
-	margin-top: 100px;
+	margin-top: 60px;
 	text-align: center;
 	color: white;
 }
@@ -64,7 +64,7 @@ h1 {
 }
 
 .mt-top-row {
-	margin-top: 100px;
+	margin-top: 60px;
 	text-align: center;
 }
 
@@ -113,25 +113,29 @@ h1 {
 /**********************/
 
 .mt-top-container-home {
+	width: auto;
 	background-image:
 		linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.2)
+          rgba(222, 222, 222, 0.9),
+          rgba(222, 222, 222, 0.5)
           ),
-		url("../images/background-2-home.jpeg");
-	width: 100%;
-	background-size: cover;
+		url("../images/background-3-home.png");
+   /*background-attachment: fixed; THIS DOES NOT WORK ON MOBILE IPHONE FOR SOME REASON */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
 }
 
 .mt-top-row-home {
-	margin-top: 100px;
-   padding-top: 20px;
-	text-align: center;
-   /*background-color:rgba(206, 199, 189, 0.9);*/
-   background: linear-gradient(
-          rgba(206, 199, 189, 0.8),
-          rgba(206, 199, 189, 0.8)
-          );
+	margin: 100px auto;
+   /*padding-top: 20px;*/
+   padding-bottom: 20px;
+   text-align: center;
+   /*background: linear-gradient(
+          rgba(188, 181, 166, 0.7),
+          rgba(188, 181, 166, 0.7)
+          );*/
+   width: auto;
 }
 
 /*.mt-sub-head {
@@ -142,12 +146,12 @@ h1 {
 
 .mt-sub-head, .mt-top-row-home a {
 	color: #212121;
-
    text-decoration: underline;
 }
 
 .mt-sub-head, .mt-top-row-home a:hover {
-	color: #ffffff;
+	/*color: #58595b;*/
+   font-weight: bold;
 }
 
 .mt-nav-next-white {
@@ -170,7 +174,7 @@ h1 {
 /**************************/
 
 .mt-container-services {
-	background-color: #b29b8b;
+	background-color: #d3cec4;
 }
 
 .mt-service-thumb-row {
@@ -182,10 +186,13 @@ h1 {
 }
 
 .mt-service-thumb {
-	background-color: #d8c9be;
-	border-color: #7f6350;
-	height: 360px;
-   padding-top: 20px;
+   background-color: #bcb5a6;
+	border-color: #bcb5a6;
+
+	/*background-color: #d8c9be;
+	border-color: #7f6350;*/
+	height: 300px;
+   padding-top: 20px;*/
 }
 
 .mt-service-thumb-text {
@@ -198,7 +205,8 @@ h1 {
 }
 
 .mt-service-thumb:hover {
-	background-color: #cec7bd !important;
+	/*background-color: #cec7bd !important;*/
+	/*background-color: #b29b8b !important;*/
 }
 
 .mt-service-header-text {
@@ -219,8 +227,8 @@ h1 {
 .mt-container-portfolio {
 	background:
 		linear-gradient(
-          rgba(206, 199, 189, 1.0),
-          rgba(206, 199, 189, 1.0)
+          rgba(190, 197, 211, 1.0),
+          rgba(190, 197, 211, 1.0)
           );
 	width: 100%;
 	background-size: cover;
@@ -231,7 +239,7 @@ h1 {
 }
 
 .mt-portfolio-thumb {
-	background-color: #7f6350;
+	background-color: #9a907b;
 	/*box-shadow: 5px 5px 10px #b29b8b;*/
 }
 
@@ -241,11 +249,11 @@ h1 {
 }
 
 .mt-portfolio-thumb:hover {
-	background-color: #b29b8b !important;
+	background-color: #bcb5a6 !important;
 }
 
 .mt-portfolio-thumb:hover h4 {
-	background-color: #b29b8b !important;
+	background-color: #bcb5a6 !important;
 	color: #212121 !important;
 }
 
@@ -265,7 +273,7 @@ h1 {
 
 
 .mt-container-connect {
-	background-color: #d8c9be;
+	background-color: #bcb5a6;
 }
 
 .mt-social-links-row {
@@ -278,33 +286,33 @@ h1 {
 }
 
 .mt-social-links a {
-	color: #7f6350;
+	color: #212121;
 }
 
 .mt-fa-social {
-	color: #7f6350;
+	color: #212121;
 	/* text-shadow: 4px 4px 5px #BBBBBB */
 }
 
-.mt-social-links a:hover {
-	/*text-decoration: none;*/
-}
+/*.mt-social-links a:hover {
+	text-decoration: none;
+}*/
 
 .mt-social-links a:hover .mt-fa-social {
-	color: #b29b8b;
+	color: #d3cec4;
 }
 
 .mt-connect-form-row {
 	padding-top: 20px;
 }
 
-.btn {
-	color: #7f6350;
+.btn a {
+   color: #212121;
 }
 
-.btn:hover {
-   color: #7f6350;
-   background-color: #b29b8b;
+.btn:hover a {
+   color: #bcb5a6;
+   /*background-color: #9a907b;*/
 }
 
 .form-control {
@@ -312,7 +320,7 @@ h1 {
 }
 
 .mt-fa-button {
-	color: #7f6350;
+	color: #9a907b;
 }
 
 .mt-connect-header-text {
@@ -336,12 +344,7 @@ h1 {
 	border-color: #212121;
 	border-radius: 50%;
 	padding-top: 4px;
-	margin: auto;
-   text-align: center;
-	position: fixed;
-	z-index: 999;
-	bottom: 1em;
-	right: 1em;
+   margin: auto;
 }
 
 .mt-scroll-down-link a {
